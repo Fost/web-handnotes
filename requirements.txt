@@ -1,0 +1,10 @@
+mkdocs
+mkdocs-material
+mkdocs-material-extensions
+mkdocs-minify-plugin
+mkdocs-redirects
+mkdocs-mermaid2-plugin
+
+pyembed
+pyembed-markdown
+pymdown-extensions

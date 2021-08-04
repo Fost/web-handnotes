@@ -1,2 +1,1 @@
-# webdeveloper-handnotes
-My handnotes
+# My Handnotes

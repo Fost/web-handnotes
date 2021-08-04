@@ -1,0 +1,25 @@
+{
+    "excludeFiles": [
+        ".yaspellerrc",
+        "mkdocs.yml",
+        "node_modules",
+        ".git"
+    ],
+    "lang": "ru",
+    "ignoreUrls": true,
+    "ignoreUppercase": true,
+    "findRepeatWords": true,
+    "fileExtensions": [
+        ".md"
+    ],
+    "ignoreTags": [
+        "code",
+        "script"
+    ],
+    "report": [
+        "console"
+    ],
+    "dictionary": [
+
+    ]
+}

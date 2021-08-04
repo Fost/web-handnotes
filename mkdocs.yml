@@ -1,0 +1,57 @@
+## To configure your Mkdocs installation using this file,
+## refer to Mkdocs documentation
+
+# Basic site config
+site_name: Web Handnotes
+site_url: https://fost.github.io/web-handnotes
+use_directory_urls: true
+
+# Repository information
+repo_url: https://github.com/fost/web-handnotes
+repo_name: web-handnotes
+edit_uri: edit/master/src
+
+theme:
+    name: material
+    custom_dir: overrides
+    palette:
+        scheme: slate
+        primary: amber
+        accent: yellow
+    font:
+        text: Inter
+        code: Ubuntu Mono
+    language: ru
+    features:
+        - navigation.tabs
+        - navigation.instant
+
+# Options
+docs_dir: src
+
+markdown_extensions:
+    - meta
+    - pyembed.markdown
+    - markdown.extensions.admonition
+    - markdown.extensions.attr_list
+    - markdown.extensions.def_list
+    - markdown.extensions.meta
+    - pymdownx.details
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.tabbed
+    - pymdownx.tasklist
+
+# Mkdocs Plugins
+plugins:
+    - mermaid2
+    - search:
+          lang:
+              - ru
+    - minify:
+          minify_html: true
+
+extra_javascript:
+    - https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js
+
+
