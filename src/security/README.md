@@ -6,7 +6,7 @@
 - [The Open Web Application Security Project - OWASP](https://www.owasp.org/index.php/Main_Page)
 - [Everything you need to know about HTTP security headers - Appcanary](https://blog.appcanary.com/2017/http-security-headers.html)
 
-# Authentification
+## Authentification
 
 - [Authentication Cheat Sheet - OWASP](https://www.owasp.org/index.php/Authentication_Cheat_Sheet)
 - [Authentication — Wikipedia](https://en.wikipedia.org/wiki/Authentication)
@@ -14,14 +14,14 @@
 - [The Current State Of Authentication: We Have A Password Problem – Smashing Magazine](https://www.smashingmagazine.com/2016/06/the-current-state-of-authentication-we-have-a-password-problem/)
 - [Security token — Wikipedia](https://en.wikipedia.org/wiki/Security_token)
 - [Password — Wikipedia](https://en.wikipedia.org/wiki/Password#Alternatives_to_passwords_for_authentication)
-- [GRC's | SQRL Secure Quick Reliable Login  ](https://www.grc.com/sqrl/sqrl.htm)
+- [GRC's | SQRL Secure Quick Reliable Login](https://www.grc.com/sqrl/sqrl.htm)
 - [teesloane/Auth-Boss: Become an Auth Boss. Learn about different authentication methodologies on the web.](https://github.com/teesloane/Auth-Boss)
 
-
 ## “Invalid Username or Password”, a useless security measure
+
 You can confirm if an username exist by trying to create an new account with the same username.
 
-https://kev.inburke.com/kevin/invalid-username-or-password-useless/
+<https://kev.inburke.com/kevin/invalid-username-or-password-useless/>
 
 > - Rate limiting can go a fair way to preventing brute force attacks. To find email addresses, an attacker is going to need to try a lot of email addresses and/or a lot of passwords, and get a lot of them wrong. Consider throttling invalid login attempts by IP address or subnet. Check submitted passwords against a dictionary of common passwords (123456, monkey, etc) and ban that traffic extra hard. Exponential backoff (forcing attackers to try again after 1, 2, 4, 8, 16.. seconds) is useful.
 > - Give guidance to users about creating strong passwords. Allow easy integration with LastPass or 1Password.
@@ -33,27 +33,29 @@ https://kev.inburke.com/kevin/invalid-username-or-password-useless/
 #### Password rules
 
 User (advices):
+
 - use long password
 - use mix of special chars, numbers, higher case and lowercase
 
 Implementation:
+
 - show advices and use detection rules to show warnings
 - long password (at least 8 chars, never max at least 30 chars)
 - don't allow password be equal to the username or the email address
 - don't disallow copy/past. It wont increase protection:
-	- [Troy Hunt: The “Cobra Effect” that is disabling paste on password fields](https://www.troyhunt.com/the-cobra-effect-that-is-disabling/)
-	- [Let them paste passwords - NCSC Site](https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords)
-	- [Le copier coller est possible dans les champs de formulaire. - Bonne pratique N° 104 - Check-list Opquast Website V3 - Opquast Check-lists](https://checklists.opquast.com/fr/opquast-website-v3/criteria/43617)
+  - [Troy Hunt: The “Cobra Effect” that is disabling paste on password fields](https://www.troyhunt.com/the-cobra-effect-that-is-disabling/)
+  - [Let them paste passwords - NCSC Site](https://www.ncsc.gov.uk/blog-post/let-them-paste-passwords)
+  - [Le copier coller est possible dans les champs de formulaire. - Bonne pratique N° 104 - Check-list Opquast Website V3 - Opquast Check-lists](https://checklists.opquast.com/fr/opquast-website-v3/criteria/43617)
 
 Password strength:
 
-- https://cups.cs.cmu.edu/meter/ - [cupslab/password_meter: This project implements a data-driven password meter. Its effects on password security and usability were evaluated in the following publication: http://www.blaseur.com/papers/CHI17meter.pdf and a demo is available at: https://cups.cs.cmu.edu/meter/](https://github.com/cupslab/password_meter)
-- https://github.com/dropbox/zxcvbn and https://github.com/bjeavons/zxcvbn-php
+- <https://cups.cs.cmu.edu/meter/> - [cupslab/password_meter: This project implements a data-driven password meter. Its effects on password security and usability were evaluated in the following publication: http://www.blaseur.com/papers/CHI17meter.pdf and a demo is available at: https://cups.cs.cmu.edu/meter/](https://github.com/cupslab/password_meter)
+- <https://github.com/dropbox/zxcvbn> and <https://github.com/bjeavons/zxcvbn-php>
 - [javascript - Password Strength Meter - Stack Overflow](https://stackoverflow.com/questions/948172/password-strength-meter)
 - [Password Strength Checker](http://www.passwordmeter.com/)
-- https://github.com/aarondo/Strength.js
+- <https://github.com/aarondo/Strength.js>
 - [password meter - JSFiddle](http://jsfiddle.net/dimitar/n8Dza/)
-- https://github.com/danpalmer/jquery.complexify.js
+- <https://github.com/danpalmer/jquery.complexify.js>
 - [Reusable Security: New Paper on Password Security Metrics](http://reusablesec.blogspot.fr/2010/10/new-paper-on-password-security-metrics.html) - "Shannon entropy" (longer is stronger) is false
 - [Password strength — Wikipedia](https://en.wikipedia.org/wiki/Password_strength#Entropy_as_a_measure_of_password_strength)
 
@@ -69,14 +71,15 @@ Examples: OAuth, Google, Facebook, Twitter, LinkedIn, Github, etc.
 - [Rainbow table — Wikipédia](https://fr.wikipedia.org/wiki/Rainbow_table)
 
 #### Fcrack zip
+
 ```bash
-$ sudo port install fcrackzip
+sudo port install fcrackzip
 ```
 
-	-l (#-#): specify the minimum and maximum length of passwords to check
-	-b : use brute force to crack the password
-	-c (charset): specify the character set to use
-	-u : unzip / filter incorrect passwords
+ -l (#-#): specify the minimum and maximum length of passwords to check
+ -b : use brute force to crack the password
+ -c (charset): specify the character set to use
+ -u : unzip / filter incorrect passwords
 
 ### Client certificate
 

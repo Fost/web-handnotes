@@ -10,7 +10,7 @@
     "scripts": {
         "start": "npm run mkdocs:dev",
         "lint": "markdownlint \"**/*.md\" --ignore node_modules",
-        "lint:fix": "./scripts/lint-md.sh > .logs/linting-md.txt",
+        "lint:fix": "markdownlint \"**/*.md\" --ignore node_modules --fix",
         "yaspeller:src": "yaspeller ./src",
         "mkdocs:dev": "mkdocs serve"
     },
