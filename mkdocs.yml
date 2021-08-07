@@ -20,38 +20,40 @@ theme:
         accent: yellow
     font:
         text: Inter
-        code: Ubuntu Mono
+        code: Roboto Mono
     language: ru
     features:
         - navigation.tabs
-        - navigation.instant
+    shortcuts:
+        search: 191
 
 # Options
 docs_dir: src
 
 markdown_extensions:
     - meta
+    - abbr
+    - admonition
+    - attr_list
+    - def_list
     - pyembed.markdown
-    - markdown.extensions.admonition
-    - markdown.extensions.attr_list
-    - markdown.extensions.def_list
     - markdown.extensions.meta
+    - md_in_html
     - pymdownx.details
-    - pymdownx.snippets
-    - pymdownx.superfences
+    - pymdownx.mark
+    - pymdownx.smartsymbols
     - pymdownx.tabbed
     - pymdownx.tasklist
+    - pymdownx.snippets:
+          check_paths: true
+          base_path: src
 
 # Mkdocs Plugins
 plugins:
-    - mermaid2
     - search:
           lang:
               - ru
     - minify:
           minify_html: true
-
-extra_javascript:
-    - https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js
 
 
