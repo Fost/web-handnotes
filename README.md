@@ -9,8 +9,7 @@
 
 ### Пререквизиты
 
-Заметки используют [**MkDocs**](https://www.mkdocs.org/) and [**Material for MkDocs**](https://squidfunk.github.io/mkdocs-material/).
-Шаги для локальной сборки и тестов:
+Используется [**MkDocs**](https://www.mkdocs.org/) и [**Material for MkDocs**](https://squidfunk.github.io/mkdocs-material/).
 
 1. Python 3.7 или выше.
 3. npm install
@@ -22,7 +21,7 @@
 npm run start
 ```
 
-открыть <http://127.0.0.1:8000>
+<http://127.0.0.1:8000>
 
 ### Сборка
 
@@ -32,13 +31,13 @@ mkdocs build --clean
 
 ### Форматирование
 
-Используется ```.markdownlintrc```.
+```.markdownlintrc```.
 
 ```console
 npm run lint
 ```
 
-Исправление всех ошибок автоматически
+Исправление ошибок
 
 ```console
 npm run lint:fix
