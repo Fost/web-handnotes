@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://fost.github.io/web-handnotes/</loc>
+         <lastmod>2021-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fost.github.io/web-handnotes/development/localization/libs-and-tools/</loc>
+         <lastmod>2021-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fost.github.io/web-handnotes/development/localization/pseudo-locale/</loc>
+         <lastmod>2021-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fost.github.io/web-handnotes/linux/nginx/</loc>
+         <lastmod>2021-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fost.github.io/web-handnotes/linux/system-administration/</loc>
+         <lastmod>2021-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://fost.github.io/web-handnotes/security/</loc>
+         <lastmod>2021-12-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
