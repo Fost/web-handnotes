@@ -13,14 +13,13 @@
 Шаги для локальной сборки и тестов:
 
 1. Python 3.7 или выше.
-2. Yarn 1.x
-3. yarn install
+3. npm install
 4. pip install -r requirements.txt
 
 ### Локальный сервер
 
 ```console
-yarn run start
+npm run start
 ```
 
 открыть <http://127.0.0.1:8000>
@@ -36,11 +35,11 @@ mkdocs build --clean
 Используется ```.markdownlintrc```.
 
 ```console
-yarn run lint
+npm run lint
 ```
 
 Исправление всех ошибок автоматически
 
 ```console
-yarn run lint:fix
+npm run lint:fix
 ```

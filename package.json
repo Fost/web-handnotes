@@ -4,9 +4,6 @@
     "description": "My Handnotes.",
     "author": "Oleg Pimenov",
     "license": "MIT",
-    "engines": {
-        "yarn": ">= 1.0.0"
-    },
     "scripts": {
         "start": "npm run mkdocs:dev",
         "lint": "markdownlint \"**/*.md\" --ignore node_modules",
@@ -15,7 +12,7 @@
         "mkdocs:dev": "mkdocs serve"
     },
     "devDependencies": {
-        "markdownlint-cli": "^0.28.1",
-        "yaspeller": "^7.0.0"
+        "markdownlint-cli": "^0.30.0",
+        "yaspeller": "^8.0.0"
     }
 }

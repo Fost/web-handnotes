@@ -42,7 +42,9 @@ markdown_extensions:
     - pymdownx.details
     - pymdownx.mark
     - pymdownx.smartsymbols
-    - pymdownx.tabbed
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+          alternate_style: true
     - pymdownx.tasklist
     - pymdownx.snippets:
           check_paths: true

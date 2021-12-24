@@ -10,22 +10,26 @@
 
 `chown` запись в формате `user:group`.
 
-
 ```sh
 chown susan:delta file          # Для {file} назначили пользователя `susan` и группу `delta`
 chown alan file                 # Для {file} назначили пользователя `alan`
 chown alan: file                # Для {file} назначили пользователя и группу `alan`
 chown :gamma file               # Для {file} назначили группу `gamma`
 ```
+
 Рекурсинвное назначение прав для пользователя {user} и для пути {path}
+
 ```sh
 chown -R user path
 ```
+
 Для {path} назначили пользователя `susan` и группу `delta`, рекурсивно и с подробным выводом
+
 ```sh
 chown --verbose --recursive susan:delta path
 chown -vR susan:delta path
 ```
+
 ```sh
 chown -vR --reference=. path    # Использование `reference` файла для конфигурации назначения прав
 chown -cfR --preserve-root alan # `preserve-root` предотвращает изменения файлов в корневом каталоге, если не используется с `рекурсивным`
